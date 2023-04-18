@@ -1,13 +1,14 @@
 import Button from '../boutton/boutton'
 import styles from './navBar.module.css'
 import { A } from '@solidjs/router'
+import logo from '../../src/assets/logo.png'
 
 export default function NavBar(){
     return(
         <div class={styles.navBar}>
             <div class={styles.navBarContainer}>
                 <div class={styles.logo}>
-                    <img src="./src/assets/logo.png" alt="logo-ajec" />
+                    <img src={logo} alt="logo-ajec" />
                 </div>
                 <div class={styles.navigation}>
                     <ul>
