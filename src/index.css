@@ -78,6 +78,7 @@ code {
   overflow: hidden;
   padding: 140px 0;
   background-color: var(--color-primary-10);
+  position: relative;
 }
 
 section {
