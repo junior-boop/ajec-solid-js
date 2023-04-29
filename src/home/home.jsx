@@ -1,3 +1,5 @@
+import { ClubSection } from '../../composants/club/club'
+import { Diapo_2 } from '../../composants/diapo/diapo'
 import Header from '../../composants/header_home/header'
 import Programme from '../../composants/programme/programme'
 import Vide from '../../composants/vide'
@@ -11,6 +13,8 @@ export default function Home(){
             <Header />
             <Vision />
             <Programme />
+            <Diapo_2 image={'/diapos.jpg'} />
+            <ClubSection />
         </div>
     )
 }

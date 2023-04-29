@@ -1,0 +1,20 @@
+.grid_template_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.club {
+    display: flex;
+    width:  100%;
+    aspect-ratio: 1;
+    align-items: center;
+    justify-content: center;
+}
+.club .clubContainer {
+    display: flex;
+    width: 350px;
+    aspect-ratio: 1;
+    border: 1px solid silver;
+    border-radius: 16px;
+    background-color: var(--color-primary);
+}

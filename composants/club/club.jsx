@@ -22,14 +22,14 @@ export function ClubSection(){
 }
 
 
-function Club ({name, image, }){
+function Club ({name, image, url}){
     return(
         <div class={styles.club}>
             <div class={styles.clubContainer}>
                 <div class={styles.img} style = {{"background-image" : `url(${image})`}}>
                     
                 </div>
-                <div class="h4"></div>
+                <div class="h4">{name}</div>
             </div>
         </div>
     )

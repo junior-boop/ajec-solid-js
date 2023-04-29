@@ -1,8 +1,24 @@
+import { createEffect, createSignal, onMount } from "solid-js";
 import Container from "../container/container";
 import ProgrammeItems from "../programmeItems/programmeItem";
 import styles from './programme.module.css'
 
 export default function Programme(){
+    const [height, setHeight] = createSignal(0)
+
+    const ref = (el) => {
+
+        onMount(() => {
+            setHeight(el.offsetWidth)
+            console.log('je fonctionne', el.offsetWidth)
+        })
+    }
+
+    createEffect(() => {
+        console.log(height())
+    })
+
+    
     return(
         <section id="programme">
             <CourbeIn class = {styles.courbe_in}/>
@@ -15,7 +31,20 @@ export default function Programme(){
                         transferts des compétences d’un domaine à un autre.</div>
                     </div>
                     <div class = {styles.second}>
-                        <ProgrammeItems />
+                        <div class={[styles.btn, styles.btn_left]}>
+                            <button></button>
+                        </div>
+                        <div ref={ref} >
+                            <ProgrammeItems />
+                            <ProgrammeItems />
+                            <ProgrammeItems />
+                            <ProgrammeItems />
+                            <ProgrammeItems />
+                            <ProgrammeItems />
+                        </div>
+                        <div class={[styles.btn, styles.btn_left]}>
+                            <button></button>
+                        </div>
                     </div>
                     <div class = {styles.third}></div>
                 </div>

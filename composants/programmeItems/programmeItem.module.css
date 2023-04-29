@@ -41,6 +41,7 @@
     transition: all ease-in-out .5s;
     border-radius: var(--border-radius-principal);
     overflow: hidden;
+    z-index: 25;
 }
 .programmeItems .infoComponent {
     height: 485px;
@@ -56,6 +57,7 @@
     transition: all ease-in-out .5s;
     border-radius: var(--border-radius-principal);
     overflow: hidden;
+    z-index: 26;
 }
 
 .programmeItems .imageComponent img {

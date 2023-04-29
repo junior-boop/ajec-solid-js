@@ -81,6 +81,12 @@ code {
   position: relative;
 }
 
+#suite-programme {
+  position: relative;
+  display: flex ;
+  justify-content: center;
+}
+
 section {
   padding: 92px 0;
 }

@@ -31,7 +31,7 @@ export default function ProgrammeItems(){
 
     return(
         <aside class={styles.programmeItems} onMouseOver={handleMouseOver} onMouseOut={handleMouseOver} onMouseMove={trackerMousePositionInComponent} >
-            <BackgroundAside />
+            {/* <BackgroundAside /> */}
             <ImageComponent />
             <InfoComponent />
         </aside>
@@ -40,10 +40,6 @@ export default function ProgrammeItems(){
 
 
 const BackgroundAside = () => {
-    
-    
-    
-    
     return(
         <div class={styles.backgroundAside}>
             <div>
