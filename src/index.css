@@ -94,12 +94,19 @@ section {
 footer {
   background-color: var(--color-primary-10);
 }
+footer * {
+  color: white;
+  font-weight: 300;
+}
 footer section:last-child {
-  background-color: var(--color-primary-25);
+  background-color: var(--color-primary-85);
   padding: 52px 0;
 }
 footer section:last-child .copyright {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+footer section:last-child .copyright * {
+  color: white;
 }
