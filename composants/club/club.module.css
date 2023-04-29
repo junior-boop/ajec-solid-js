@@ -12,9 +12,18 @@
 }
 .club .clubContainer {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 350px;
     aspect-ratio: 1;
     border: 1px solid silver;
     border-radius: 16px;
     background-color: var(--color-primary);
+    gap: 12px;
+}
+.club .clubContainer > div {
+    width: 150px;
+    aspect-ratio: 1;
+    background-size: cover;
 }

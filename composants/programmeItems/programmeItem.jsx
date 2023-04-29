@@ -1,5 +1,6 @@
 import { createSignal } from "solid-js"
 import styles from './programmeItem.module.css'
+import { A } from "@solidjs/router"
 
 const [openScene, setOpenScene] = createSignal(false)
 const [mousePositionOnComponent, setMousePositionOnComponent] = createSignal({
@@ -18,7 +19,7 @@ const handleMouseOver = (e) => {
     }
 }
 
-export default function ProgrammeItems(){
+export default function ProgrammeItems({abr, name, image, url = '/'}){
 
     const trackerMousePositionInComponent = (e) => {
         if(openScene()){
@@ -30,11 +31,13 @@ export default function ProgrammeItems(){
      }
 
     return(
-        <aside class={styles.programmeItems} onMouseOver={handleMouseOver} onMouseOut={handleMouseOver} onMouseMove={trackerMousePositionInComponent} >
-            {/* <BackgroundAside /> */}
-            <ImageComponent />
-            <InfoComponent />
-        </aside>
+        <A style={{"text-decoration":"none", border : 'none', outline : 'none'}} href={url}>
+            <aside class={styles.programmeItems} onMouseOver={handleMouseOver} onMouseOut={handleMouseOver} onMouseMove={trackerMousePositionInComponent} >
+                {/* <BackgroundAside /> */}
+                <ImageComponent image={image} />
+                <InfoComponent abr={abr} name={name}/>
+            </aside>
+        </A>
     )
 }
 
@@ -59,24 +62,24 @@ const BackgroundAside = () => {
 const ImageComponent = ({image}) => {
     return(
         <div class={styles.imageComponent}>
-            <img src='/entreprenariat-femme.jpg' alt="" />
+            <img src={image} alt="" />
         </div>
     )
 }
 
-const InfoComponent = () => {
+const InfoComponent = ({abr, name}) => {
     return(
         <div class={styles.infoComponent}>
             <div>
                 
                 <div class={styles.desc}>
                     <span>
-                        PPEF
+                        {abr}
                         <span style={{width : '42px', height :'42px' , "background-color" : '#CDABF7', display : 'flex', "align-items" : 'center', "justify-content" : 'center', "border-radius" : '50%'}}>
                             <FlecheGauche style ={{ color : '#5711B1', width : '24px', height :'24px', }} />
                         </span>
                     </span>
-                   <p class="p" style={{ "font-size" : '24px', "line-height" : 1, color : 'white'}}> Programme de Promotion de l’Entrepreneuriat Féminin...
+                   <p class="p" style={{ "font-size" : '24px', "line-height" : 1, color : 'white'}}> {name}
                         <span style={{color : '#CDABF7', display : 'block', 'padding-top' : '12px', "font-size" : '16px'}}> Avoir plus d'information </span>
                    </p>
                 </div>

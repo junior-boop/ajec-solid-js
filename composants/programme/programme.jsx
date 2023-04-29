@@ -3,6 +3,13 @@ import Container from "../container/container";
 import ProgrammeItems from "../programmeItems/programmeItem";
 import styles from './programme.module.css'
 
+import entreprenariat from '../../src/assets/entreprenariat-femme.jpg'
+import image2 from '../../src/assets/girl4.jpg'
+import scientifique from '../../src/assets/scientist.jpg'
+import PVU from '../../src/assets/utile.jpg'
+import Homme from '../../src/assets/homme.jpg'
+import student from '../../src/assets/student.jpg'
+
 export default function Programme(){
     const [height, setHeight] = createSignal(0)
 
@@ -35,12 +42,12 @@ export default function Programme(){
                             <button></button>
                         </div>
                         <div ref={ref} >
-                            <ProgrammeItems />
-                            <ProgrammeItems />
-                            <ProgrammeItems />
-                            <ProgrammeItems />
-                            <ProgrammeItems />
-                            <ProgrammeItems />
+                            <ProgrammeItems image={entreprenariat} abr={"PPEF"} name={"Programme de Promotion de l’Entrepreneuriat Féminin..."}/>
+                            <ProgrammeItems image={image2} abr={"PRCE"} name={"Programme de Renforcement des Capacités des Enseignants..."}/>
+                            <ProgrammeItems image={scientifique} abr={"PEOS"} name={"Programmes de d’Elaboration des Ouvrages Scientifiques..."}/>
+                            <ProgrammeItems image={PVU} abr={"PVU"} name={"Programme Vancaces Utiles (PVU)"}/>
+                            <ProgrammeItems image={Homme} abr={"PCDRS"} name={"Programme de Conception des Documentaires/ Revues Scientifi..."}/>
+                            <ProgrammeItems image={student} name={"Programmes d’Enseignement Supérieur Polyvalent Conception..."} abr={'PESPC'}/>
                         </div>
                         <div class={[styles.btn, styles.btn_left]}>
                             <button></button>

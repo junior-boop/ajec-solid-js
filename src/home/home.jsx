@@ -1,5 +1,6 @@
 import { ClubSection } from '../../composants/club/club'
 import { Diapo_2 } from '../../composants/diapo/diapo'
+import Footer from '../../composants/footer/footer'
 import Header from '../../composants/header_home/header'
 import Programme from '../../composants/programme/programme'
 import Vide from '../../composants/vide'
