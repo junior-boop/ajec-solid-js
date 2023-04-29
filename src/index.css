@@ -96,7 +96,6 @@ footer {
 }
 footer * {
   color: white;
-  font-weight: 300;
 }
 footer section:last-child {
   background-color: var(--color-primary-85);
