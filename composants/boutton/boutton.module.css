@@ -1,0 +1,9 @@
+.button {
+    display: flex;
+    width: max-content;
+    padding: 12px 20px;
+    border-radius: var(--btn-border-radius);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+}

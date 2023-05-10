@@ -1,0 +1,114 @@
+.navBar {
+    display: flex;
+    align-items: center;
+    height: 82px;
+    background-color: var(--color-white);
+    padding: 0 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navBarContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    display: flex;
+    height: 56px;
+    object-fit: contain;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+.navigation ul {
+    display: flex;
+    align-items: center;
+}
+.navigation li {
+    list-style: none;
+    padding: 12px 20px;
+    /* position: relative; */
+}
+.navigation li .menu_overlay {
+    position: absolute;
+    top: 72px ;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.711);
+    backdrop-filter: blur(18px);
+    padding: 0px 32px;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+.navigation li[data-open-menu = 'false'] .menu_overlay{
+    height: 0;
+    padding: 0px 32px;
+    opacity: 0;
+}
+.navigation li[data-open-menu = 'true'] .menu_overlay{
+    height: max-content;
+    padding: 64px 32px;
+    opacity: 1;
+}
+
+
+.navigation li a {
+    text-decoration: none;
+    color: var(--color-gray-85);
+}
+
+.menuClub {
+    display: flex;
+    align-items: flex-start;
+}
+
+.blockClub {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+}
+
+.blockClub > div:nth-child(1) {
+    width: 75px;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blockClub > div:nth-child(1) > div {
+    width: 60%;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    background-color: var(--color-primary);
+    background-size: contain;
+}
+
+.blockClub > div:nth-child(2) {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+.blockClub > div:nth-child(3) {
+    font-size: 14px;
+    font-weight: 300;
+}

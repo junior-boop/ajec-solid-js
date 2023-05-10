@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    align-items: flex-start;
+}
+.footer * {
+    font-size: 18px;
+    color : #333
+}
+.footer > aside:first-child {
+    flex: 2;
+}
+.footer > aside {
+    flex: 1;
+    padding: 0 12px;
+}
+.footer > aside ul {
+    list-style: none;
+    padding-left: 0px;
+}
+.footer > aside li {
+    margin-bottom: 10px;
+}
+.footer > aside ul li:hover a {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.footer > aside ul a {
+    text-decoration: none
+}

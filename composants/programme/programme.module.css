@@ -1,0 +1,92 @@
+.programme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.courbe_in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: clamp(200px, 50vw, 800px );
+    z-index: 1;
+}
+.courbe_out {
+    position: absolute;
+    width: clamp(200px, 90vw, 1400px);
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+.programme .first {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.programme .second {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    /* overflow-x: scroll ;
+    overflow-y:  ; */
+    position: relative;
+    z-index: 5;
+}
+.programme .second > div {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    gap : 36px
+}
+.programme .second > div > div {
+    width: max-content;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    gap : 36px;
+    transform: translateX(0);
+    transition: all .7s ease;
+}
+
+.programme .second > div:nth-child(1), 
+.programme .second > div:nth-child(3) 
+ {
+    position: absolute;
+    z-index: 20;
+    width: max-content;
+}
+.programme .second > div:nth-child(1) > button, 
+.programme .second > div:nth-child(3) > button
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 5px 12px -4px rgba(0, 0, 0, 0.356);
+    cursor: pointer;
+    color: var(--color-primary-85);
+}
+
+.programme .second > div:nth-child(1) {
+    left: -4rem;
+}
+.programme .second > div:nth-child(3) {
+    right: -4rem;
+}
+
+.programme .third {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}

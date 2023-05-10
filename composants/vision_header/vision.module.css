@@ -1,0 +1,50 @@
+.visionContainer {
+    display: flex;
+    align-items: center;
+    height: 525px;
+}
+
+.visionContainer .left, 
+.visionContainer .right {
+    height: 100%;
+}
+
+.visionContainer .left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+
+.visionContainer .left .vector {
+    position: absolute;
+    top: -50px;
+    right: -215px;
+}
+
+.visionContainer .left .block {
+    display:flex;
+    flex-direction: column;
+    padding: 32px;
+    width: 404px;
+    height: 470px;
+    border-radius: var(--border-radius-principal);
+    background-color: var(--color-primary);
+    gap: 24px;
+}
+
+.visionContainer .left .block * {
+    color : white
+}
+
+.visionContainer .right p {
+    margin-top: 0;
+}
+
+.visionContainer .right {
+    width: 50%;
+    padding-left: 64px ;
+    display: flex;
+    align-items: center;
+}

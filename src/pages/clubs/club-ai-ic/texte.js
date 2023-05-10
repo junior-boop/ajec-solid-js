@@ -1,0 +1,10 @@
+export const texte = `Pour ce qui est de l'atelier du Club d'Entrepreneuriat Agro-industrie et Industrie Chimique, son objectif, son organisation et les modulesdeformation  seront les suivants :
+### Objectifs de l’atelier du Club d'Entrepreneuriat Agro-industrie et Industrie Chimique : 
+à la fin de chaque module l’apprenant sera capable de mettre sur pieds les produits étudiés à travers la connaissance des différentes matières premières, des équipements, le protocole expérimental, le principe ou les réactions chimiques ou biochimiques qui interviennent lors de la mise sur pied du produit. Tout ceci étant en adéquation avec les cours théoriques dispensées par les enseignants titulaires.
+### Organisation des séances des animations: 
+pour chaque module une séance de animations théorique et pratiques de 3 h de temps chacune sera organisée. 
+### Animation théorique : 
+pendant la séance d’animations théorique, les généralités sur les produits à fabriquer sera fait, la liste du matériel nécessaire et leur rôle, le principe de fabrication, le protocole schématique et détaillé ainsi que les notions de sécurité seront présentés. Une brève aperçue sur les conditions nécessaires  pour la mise sur pieds d’une entreprise sera également présentée. Dans cette rubrique on parlera: la disponibilité de la matière première, la politique commerciale/étude de marché (concurrences, potentiels clients, marchés cibles, politique de prix, stratégies de vente…). A la fin des animations théorique, il sera remis aux apprenants le topo sur la manipulation à venir et chacun sera appelé à préparer la manipulation dans son cahier de manip.
+### Animation pratique : 
+après une brève révision sur le matériel nécessaire et leur rôle, le protocole et le principe de fabrication d’un produit, la pratique sera exécutée par les apprenants eux-mêmes sous la supervision du moniteur. A la fin de chaque séance pratique un compte rendu individuel sera attendu.
+`
