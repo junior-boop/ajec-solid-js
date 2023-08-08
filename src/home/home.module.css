@@ -1,0 +1,87 @@
+.presentation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+}
+
+.presentationContent {
+    width: 60%;
+    margin: 24px auto;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Segoe UI';
+    text-align: center;
+
+}
+
+.cardPresentation {
+    flex: 1;
+    display: flex;
+    padding: 36px;
+    background-color: var(--color-primary-10);
+    gap: 24px;
+    height: auto;
+    border-radius: var(--border-radius-principal);
+}
+
+.cardPresentation .icon {
+    width: 120px;
+    aspect-ratio: 1;
+}
+.cardPresentation .icon > img {
+    width: 100%;
+}
+
+.cardPresentation .texte {
+    width: 75%;
+
+}
+
+.member {
+    width: 75%;
+    margin : 24px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--border-radius-principal);
+    background-color: var(--color-primary-10);
+    padding: 32px;
+    gap: 24px;
+}
+.member .icon {
+    width: 120px;
+    aspect-ratio: 1;
+}
+.member .icon > img{
+   width: 100%;
+}
+
+/* font-size: calc(10px + 1vmin); */
+
+
+@media (max-width : 756px) {
+    .presentation {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .presentationContent {
+        width: 90%;
+        font-size: calc(10px + 1vmin);
+    }
+
+    .member {
+        width: 100%;
+        
+        gap: 24px;
+    }
+    .member .icon {
+        width: 120px;
+        aspect-ratio: 1;
+    }
+    .member .icon > img{
+       width: 100%;
+    }
+    
+}
