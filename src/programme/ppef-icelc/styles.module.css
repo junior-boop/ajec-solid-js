@@ -1,0 +1,352 @@
+.clubsPages header {
+    background-color: var(--color-primary-10);
+    padding: 67px;  
+}
+
+
+
+.clubsPages header .ClubHeader {
+    height : 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.clubsPages header .ClubHeader .clubstitrebox{
+   display: flex;
+   align-items: center;
+    gap: 3em;
+}
+.clubsPages header .ClubHeader .clubicon {
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clubsPages header .ClubHeader .clubicon > div {
+    width: 60%;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.clubsPages header .ClubHeader .clubstitle {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.clubsPages header .ClubHeader .clubstitle button {
+    padding: 12px 18px;
+    border-radius: .4rem;
+    background-color: var(--color-primary);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.clubsPages .contenu {
+    display: grid;
+    grid-template-columns: 1fr 25em;
+    padding: 32px 0;
+}
+.clubsPages .contenu .right .asidebar {
+    border: 1px solid silver;
+    padding: 1.3em;
+    padding-bottom: 0;
+}
+.clubsPages .contenu .right .asidebar ul {
+   padding-left: 0;
+}
+.clubsPages .contenu .right .asidebar li {
+   list-style: none;
+   padding: 18px 0;
+}
+.clubsPages .contenu .right .asidebar li a {
+   text-decoration: none;
+   color: #333;
+   display: flex;
+   align-items: center;
+   gap: 18px;
+
+}
+.clubsPages .contenu .right .asidebar li a span:nth-child(2) {
+     flex: 1;
+ }
+.clubsPages .contenu .right .asidebar li a .icon {
+    width: 45px;
+   height: 45px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+
+.clubsPages .contenu .right .asidebar li+li {
+    border-top: 1px solid silver;
+}
+
+
+.leftContenu {
+    width : 80%
+}
+
+
+.memberContent {
+    display : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2em;
+}
+.member {
+    display : flex;
+    width: 100%;
+    border: 1px solid rgb(211, 211, 211);
+    min-height: 275px;
+    border-radius: 7px;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 1rem;
+}
+.member .memberImage {
+    width: 100%;
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f1f1f1;
+}
+.member .infos {
+    flex: 1;
+    padding: 1rem 0;
+}
+
+.faqelement {
+    border: 1px solid rgb(228, 228, 228);    
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.faqelement + .faqelement {
+    margin-top: 5px;
+}
+
+
+.faqelement .faqtitre {
+    padding: 1rem 1.3rem;
+    font-size: calc(12px + 1vmin);
+    font-weight: 400;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.faqelement .faqtitre span {
+    width: 50px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px solid rgb(235, 235, 235);
+    border-radius: 50%;
+    background-color: #f1f1f1;
+}
+
+
+.faqelement .paragraph {
+    padding: 0 1.3rem 1.3rem;
+    font-family:'Segoe UI';
+}
+
+.temoignage {
+    display: flex;
+    gap: 1.6rem;
+    background-color: var(--color-primary-10);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin-bottom: 7rem;
+}
+.temoignage .logo {
+    background-color: silver;
+    width : 70px ;
+    height: 70px;
+    border-radius: .8rem ;
+
+}
+
+.temoignage .content {
+    flex: 1;
+}
+.temoignage .content > div:first-child {
+    font-size: calc(14px + 1vmin);
+    font-weight: 700;
+}
+.temoignage .content > div:nth-child(2){
+    font-size: calc(10px + 1vmin);
+    /* font-weight: 700; */
+}
+
+.intro {
+    display: flex;
+    width: 100%;
+    margin-bottom: 7rem;
+    position: relative;
+    justify-content: end;
+    align-items: center;
+}
+
+.intro > div:first-child{
+    position: absolute;
+    width: 60%;
+    background-color: var(--color-primary);
+    padding: 2rem;
+    border-radius: 1rem;
+    left: 0;
+    color: white;
+}
+.intro > div:nth-child(2){
+    width: 50% ;
+    aspect-ratio: 1;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.objectif { 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 7rem;
+}
+
+.objectif .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width : 80%;
+    margin: 0 auto 3rem;
+
+}
+
+.objectif .item {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary-10);
+    color: #350B6B;
+    padding: 1rem;
+    border-radius: .7rem;
+}
+.objectif .item .chiffre{
+    font-size: calc(52px + 1vmin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96px;
+    margin-bottom: -18px;
+}
+.objectif .item .news{
+    font-size: calc(12px + 1vmin);
+    line-height: 1;
+    text-align: center;
+}
+
+
+@media (max-width : 756px) {
+    .clubsPages header {
+        background-color: var(--color-primary-10);
+        width: 100vw;
+        padding: 48px 0;  
+    }
+    .clubsPages header .ClubHeader .clubstitrebox{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em ;
+     }
+
+    .clubsPages header .ClubHeader .clubstitle {
+        width: 100%;
+        text-align: center;
+    }
+    .clubsPages header .ClubHeader .clubstitle div:first-child {
+        font-size: calc(32px + 1vmin);
+        text-align: center;
+        width: 100%;
+    }
+
+    .clubsPages .contenu {
+        display: block;
+        padding: 6rem 0;
+    }
+    .leftContenu {
+        width : 100%
+    }
+
+    .clubsPages .contenu .right {
+        margin-top: 5rem;
+    }
+
+    .objectif { 
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        margin-bottom: 7rem;
+    }
+    
+    .objectif > div:first-child > div:first-child {
+        font-size: calc(24px + 1vmin);
+    } 
+
+    .objectif .grid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        width : 100%;
+        margin: 0 auto 3rem;
+    
+    }
+
+    .objectif .item {
+        width: 47%;
+        aspect-ratio: 1;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 4rem;
+    }
+
+    .intro > div:first-child{
+        position: relative;
+        width: 100%;
+        background-color: var(--color-primary);
+        padding: 2rem;
+        border-radius: 1rem;
+        left: 0;
+        color: white;
+        top: -2rem;
+    }
+
+    .intro > div:nth-child(2){
+        width: 100% ;
+        aspect-ratio: 1;
+        background-position: center;
+        background-size: cover;
+        border-radius: 1rem;
+    }
+
+    .faqelement .faqtitre span {
+        width: 70px;
+    }
+    .faqelement + .faqelement {
+        margin-top: 3vmin;
+    }
+}
