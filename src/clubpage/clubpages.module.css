@@ -1,7 +1,6 @@
 .clubsPages header {
     background-color: var(--color-primary-10);
     padding: 67px;
-    
 }
 .clubsPages header .ClubHeader {
     height : 300px;
@@ -89,3 +88,72 @@
 }
 
 
+.leftContenu {
+    width : 80%
+}
+
+
+.memberContent {
+    display : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2em;
+}
+.member {
+    display : flex;
+    width: 100%;
+    border: 1px solid rgb(211, 211, 211);
+    min-height: 275px;
+    border-radius: 7px;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 1rem;
+}
+.member .memberImage {
+    width: 100%;
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f1f1f1;
+}
+.member .infos {
+    flex: 1;
+    padding: 1rem 0;
+}
+
+@media (max-width : 756px) {
+    .leftContenu {
+        width : 100%
+    }
+
+    .clubsPages .contenu {
+        display: block;
+        padding: 32px 0;
+    }
+    .clubsPages header {
+        background-color: var(--color-primary-10);
+        padding: 32px 0;
+    }
+    .clubsPages header .container{
+        margin: 0;
+    }
+
+    .clubsPages header .ClubHeader {
+        height : auto;
+        width: 100%;
+        display: block;
+    }
+
+    .clubsPages header .ClubHeader .clubstitrebox{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+         gap: 2em;
+     }
+
+     .clubsPages header .ClubHeader .clubstitle {
+        width: 100%;
+    }
+}
