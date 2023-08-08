@@ -18,11 +18,11 @@ export function Diapo_2({image}){
                         <div class={styles.titre}>
                             <div class="h1" style={{color : 'white'}}>Une Competence</div>
                             <div class="h1" style={{color : 'white'}}>Pour Entreprendre</div>
-                            <Zigzag style = {{ 'margin-left' : '100px'}} />
+                            <Zigzag class = {styles.zigzag} style = {{ 'margin-left' : '100px'}} />
                         </div>
                     </div>
                 </div>
-                <div style = {{ position : 'absolute', bottom : '12px', width : '83%', display : 'flex', "justify-content" : 'center' }} >
+                <div class = {styles.fin} >
                     <FinCourbe />
                 </div>
             </Container>

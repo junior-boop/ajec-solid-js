@@ -1,0 +1,234 @@
+.activity{
+    display: grid;
+    grid-template-columns: 1fr 25em;
+    padding: 3em 0;
+}
+
+.activity .content {
+    width: 80%;
+}
+
+.articlesContainer {
+    display: block;
+    position : relative;
+    height: 30rem;
+}
+
+.articlesgrand {
+    display: flex;
+    aspect-ratio: 19/9;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: silver;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.articlesgrand > div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    padding: 2em;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.856) 0%, transparent 40%);
+}
+
+.articlesgrand .desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.activity .content .article{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    gap: 3rem;
+}
+.activity .content .article + .article{
+   border-top: 1px solid silver;
+   padding-top: 2rem;
+   margin-top: 2rem;
+}
+.activity .content .article .image{
+    width: 100%;
+    aspect-ratio: 1;
+    border: 1px solid silver;
+    border-radius: 1rem ;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.activity .content .article > div:first-child{
+    padding: 1em 0;
+}
+.activity .content .article > div:first-child > a{
+    text-decoration: none;
+    color: black;
+}
+
+.programmeplus {
+    width: 100%;
+    padding: 2em;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 1rem;
+}
+.programmeplus button {
+    width: 100%;
+    padding: 1em;
+    background-color: white;
+    color: var(--color-primary);
+    border-radius: .5rem;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 1.4em;
+    border: none;
+    outline: none;
+}
+
+.imageslastprogramme {
+    display: block;
+    padding: 2rem;
+    width: 100%;
+    border: 1px solid var(--color-primary-25);
+    border-radius: 1em;
+    margin-top: 2rem;
+    color: var(--color-primary);
+}
+.imageslastprogramme .galleries{
+    
+    width: 100%;
+    aspect-ratio: 1;
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageslastprogramme .galleries > div{
+    width: 85%;
+    aspect-ratio: 1;
+    border: 1px solid silver;
+    position: absolute;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: .3rem;
+}
+
+.imageslastprogramme .galleries > div:nth-child(2){
+    transform: translateX(-12px) translateY(-12px);
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.699);
+}
+.imageslastprogramme .galleries > div:nth-child(1){
+    transform: translateX(12px) translateY(12px);
+}
+
+
+.conteneur {
+    width: 800px;
+}
+.conteneur p {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Segoe UI';
+}
+
+.conteneur .images {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 15rem;
+    margin-top: 2rem;
+    
+}
+.conteneur .images > div {
+    width: 100%;
+    aspect-ratio: 19/9;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.conteneur .images > div img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.contenuvide {
+    display: flex;
+    width: 100%;
+    height: 20vmin;
+    margin: 4rem 0;
+    background-color: rgb(236, 236, 236);
+    border-radius: 1rem;
+    font-size: 3vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width : 756px) {
+    .activity{
+        
+        display: block;
+        padding: 3em 0;
+    }
+    .activity .content {
+        width: 100%;
+        margin: auto;
+    }
+    .conteneur {
+        width: 100%;
+    }
+    .conteneur p {
+        display: block;
+        font-size: calc(10px + 1vmin);
+    }
+
+    .conteneur .images {
+        display: flex;
+        align-items: flex-start;
+        height: 1rem;
+        margin-top: 2rem;
+        
+    }
+    .conteneur .images > div {
+        aspect-ratio: 4/3;
+        border-radius: 5px;
+    }
+
+    .activity .content .article > div:first-child{
+        padding: 0em 0;
+        width: 55vmin;
+    }
+    .activity .content .article{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .activity .content .article .image{
+        width: 120px;
+        aspect-ratio: 1;
+        position: relative;
+        border-radius: 5px;
+    }
+    .activity .content .article .image > span{
+        position: absolute;
+        bottom: -70px;
+        right: 0;
+    }
+}

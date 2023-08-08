@@ -19,9 +19,11 @@ export default function Header(){
                             <span class="h4">Association des Jeunes Entrepreneurs du Cameroun</span>
                             <span class="p">Favoriser l’insertion socioprofessionnelle jeune, l’esprit de la pratique, d’entrepreneuriat et de leadership.</span>
                         </div>
+                        <div>
                         <Button>
                             Devenir Membre
                         </Button>
+                        </div>
                     </div>
                 </div>
                 <div class ={styles.right}>

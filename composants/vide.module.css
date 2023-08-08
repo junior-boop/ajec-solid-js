@@ -1,0 +1,9 @@
+.vide {
+    height : 82px ;
+}
+
+@media (max-width : 758px) {
+    .vide {
+        height: 58px;
+    }
+}

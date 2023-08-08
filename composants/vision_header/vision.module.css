@@ -48,3 +48,43 @@
     display: flex;
     align-items: center;
 }
+
+@media (max-width : 758px) {
+    .visionContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .visionContainer .left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .visionContainer .left .block {
+        display:flex;
+        flex-direction: column;
+        padding: 32px;
+        width: 90%;
+        height: max-content;
+        border-radius: var(--border-radius-principal);
+        background-color: var(--color-primary);
+        gap: 24px;
+        margin-bottom: 3rem;
+    }
+
+    .visionContainer .right {
+        width: 90%;
+        padding-left: 0 ;
+        display: flex;
+        align-items: center;
+    }
+
+    .visionContainer .left .vector {
+       display: none;
+    }
+}

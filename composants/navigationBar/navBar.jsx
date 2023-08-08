@@ -2,6 +2,7 @@ import Button from '../boutton/boutton'
 import styles from './navBar.module.css'
 import { A } from '@solidjs/router'
 import logo from '../../src/assets/logo.png'
+import burger from '../../src/assets/burgerMenu.png'
 
 import image1  from '../../src/assets/laboratoire_white.png'
 import image2  from '../../src/assets/croissance_white.png'
@@ -9,10 +10,11 @@ import image3  from '../../src/assets/changement-climatique_white.png'
 import image4  from '../../src/assets/maison-ecologique_white.png'
 import image5  from '../../src/assets/plumes_white.png'
 import image6  from '../../src/assets/sensible_white.png'
-import { createSignal, onMount } from 'solid-js'
+import { createEffect, createSignal, onMount } from 'solid-js'
 
 
 const [clubMenu, setClubMenu] = createSignal(false)
+const [phoneMenu, setPhoneMenu] = createSignal(false)
 
 const handleMenuHover = () => {
     setClubMenu(!clubMenu())
@@ -20,23 +22,51 @@ const handleMenuHover = () => {
    
 export default function NavBar(){
 
+    const handleClickMenu = () => {
+        setPhoneMenu(!phoneMenu())
+    }
+
+    createEffect(() => {
+        window.addEventListener('scroll', () => {
+            if(phoneMenu()) setPhoneMenu(false)
+        })
+    })
+
     
     return(
         <div class={styles.navBar}>
             <div class={styles.navBarContainer}>
-                <div class={styles.logo}>
+                <A href = '/' class={styles.logo}>
                     <img src={logo} alt="logo-ajec" />
+                </A>
+                <div onClick={handleClickMenu} class={styles.burger}>
+                    <img src={burger} alt="" />
+                </div>
+                <div data-isOpen = {phoneMenu()} class={styles.navigationphone}>
+                    <ul>
+                        <LI titre={'Accueil'} />
+                        <LI url='/activites' titre={'Activites'} />
+                        <LI url='/programme' titre={'Programmes'} />
+                        <LI url='/a-propos' titre={'A Propos'} />
+                        <div class={styles.member}>
+                        <A href='/' class={styles.login}>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3c-4.625 0-8.442 3.507-8.941 8.001H10v-3l5 4l-5 4v-3H3.06C3.56 17.494 7.376 21 12 21c4.963 0 9-4.037 9-9s-4.037-9-9-9z"/></svg>
+                            </div>
+                            <div>
+                                Devenir Membre
+                            </div>
+                        </A>
+                    </div>
+                    </ul>
+                    
                 </div>
                 <div class={styles.navigation}>
                     <ul>
-                        <li data-open-menu = {clubMenu()} onMouseOver={handleMenuHover} onMouseOut={() => setClubMenu(false)} >Nos Clubs
-                            <div class={styles.menu_overlay}>
-                                <MenuClub />
-                            </div>
-                        </li>
-                        <li><A href='/'>Activites</A></li>
-                        <li><A href='/'>Programmes</A></li>
-                        <li><A href='/'>Contactez-nous</A></li>
+                        <LI titre={'Accueil'} />
+                        <LI url='/activites' titre={'Activites'} />
+                        <LI url='/programme' titre={'Programmes'} />
+                        <LI url='/a-propos' titre={'A Propos'} />
                     </ul>
                     <Button>
                         Devenir Membre
@@ -47,14 +77,24 @@ export default function NavBar(){
     )
 }
 
+
+function LI({url = '/', titre}){
+    return(
+        <li onClick = {() => setPhoneMenu(false)}><A href={url}>{titre}</A></li>
+    )
+}
+
+
 function MenuClub(){
     const Block = ({image, titre,  description, url = '/', pdf}) => {
 
         const desc = description.length > 200? `${description.substring(0, 200)}...` : description
+        const content = url.split('/')
 
         const state = {
             titre,
             image, 
+            content : content[2],
             urlPDF : pdf,
         }
 
@@ -65,7 +105,7 @@ function MenuClub(){
                 </div>
                 <div>{titre}</div>
                 <div>{desc}</div>
-                <A style={{color : '#7b24ea'}} href={url} onClick={() => {setClubMenu(false); setTimeout(() => window.location.reload()), 300}} state={state}> Avoir plus d'information</A>
+                <A style={{color : '#7b24ea'}} href={url} onClick={() => {setClubMenu(false); location.pathname = url }} > Avoir plus d'information</A>
             </div>
         )
     }
@@ -80,3 +120,5 @@ function MenuClub(){
         </div>
     )
 }
+
+// setTimeout(() => location.reload(), 1000)

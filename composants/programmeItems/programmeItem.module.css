@@ -139,3 +139,35 @@
 .programmeItems:hover .infoComponent .desc > span{
    display: none;
 }
+
+@media (max-width : 758px) {
+    .programmeItems {
+        height: 400px;
+        width: 285px;
+        background-color: white;
+        border-radius: 16px;
+        position: relative;
+        z-index: 10;
+        transition: none;
+    }
+
+    .programmeItems .imageComponent {
+        height: 400px;
+        width: 285px;
+    }
+
+    .programmeItems .infoComponent {
+        height: 400px;
+        width: 285px;
+        display: flex;
+    }
+    .programmeItems .infoComponent .desc {
+        display: flex;
+        align-items: center;
+        padding: 24px;
+        width: 285px;
+        height: 70px;
+        background-image: linear-gradient(360deg, black 0%, rgba(0, 0, 0, 0) 100%);
+        transition: all .3s ease-in-out;
+    }
+}

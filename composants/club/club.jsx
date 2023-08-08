@@ -17,15 +17,15 @@ export function ClubSection(){
                     Nos Differents Clubs
                 </div>
                 <div class="h1" style={{color : '#7b24ea', "text-align" : 'center'}}>
-                    Entrepreneurials
+                    Entrepreneuriaux
                 </div>
                 <div class={styles.grid_template_3}>
-                    <Club image={image1} name={"Agro-industrie et Industrie Chimique (AI/IC)"} />
-                    <Club image={image2} name={"Agriculture et Agroforesterie (A/A)"} />
-                    <Club image={image3} name={"Environnement et Changements Climatiques (E/CL)"}/>
-                    <Club image={image4} name={"Energies Renouvelables (ER)"}/>
-                    <Club image={image5} name={"Journal-Poésie-Roman (JPR)"} />
-                    <Club image={image6} name={"Numérique (N)"}/>
+                    <Club image={image1} name={"Agro-industrie et Industrie Chimique (AI/IC)"} url='/clubs/ai-ic'/>
+                    <Club image={image2} name={"Agriculture et Agroforesterie (A/A)"} url='/clubs/a-a' />
+                    <Club image={image3} name={"Environnement et Changements Climatiques (E/CL)"} url='/clubs/e-cl' />
+                    <Club image={image4} name={"Energies Renouvelables (ER)"} url='/clubs/er'/>
+                    <Club image={image5} name={"Journal-Poésie-Roman (JPR)"} url='/clubs/jpr' />
+                    <Club image={image6} name={"Numérique (N)"} url='/clubs/num'/>
                 </div>
             </Container>
         </section>

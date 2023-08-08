@@ -33,7 +33,6 @@ export default function ProgrammeItems({abr, name, image, url = '/'}){
     return(
         <A style={{"text-decoration":"none", border : 'none', outline : 'none'}} href={url}>
             <aside class={styles.programmeItems} onMouseOver={handleMouseOver} onMouseOut={handleMouseOver} onMouseMove={trackerMousePositionInComponent} >
-                {/* <BackgroundAside /> */}
                 <ImageComponent image={image} />
                 <InfoComponent abr={abr} name={name}/>
             </aside>
@@ -42,21 +41,7 @@ export default function ProgrammeItems({abr, name, image, url = '/'}){
 }
 
 
-const BackgroundAside = () => {
-    return(
-        <div class={styles.backgroundAside}>
-            <div>
-                <div class={styles.before} style={{transform : `translateX(-${mousePositionOnComponent().px}px) translateY(${mousePositionOnComponent().py}px)`}}></div>
-                {
-                    openScene()
-                    ? 'je suis au-dessus'
-                    : 'je suis sortie'
-                }
-                <div class={styles.after} style={{transform : `translateX(${mousePositionOnComponent().px}px) translateY(-${mousePositionOnComponent().py}px)`}}></div>
-            </div>
-        </div>
-    )
-}
+
 
 
 const ImageComponent = ({image}) => {
@@ -67,7 +52,7 @@ const ImageComponent = ({image}) => {
     )
 }
 
-const InfoComponent = ({abr, name}) => {
+export const InfoComponent = ({abr, name}) => {
     return(
         <div class={styles.infoComponent}>
             <div>
@@ -88,6 +73,6 @@ const InfoComponent = ({abr, name}) => {
     )
 }
 
-function FlecheGauche(props) {
+export function FlecheGauche(props) {
     return <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" {...props}><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m12 26l10-10L12 6"/></svg>
 }

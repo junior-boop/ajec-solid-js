@@ -29,30 +29,30 @@ export default function Footer(){
                             <ul>
                                 <li>
                                 <i class="bx bx-chevron-right"></i>
-                                <A href="club-a-ic.html">Club d'Entrepreneuriat Agro-industrie et Industrie Chimique
+                                <A href="/clubs/ai-ic">Club d'Entrepreneuriat Agro-industrie et Industrie Chimique
                                     (A/IC)
                                 </A>
                                 </li>
                                 <li>
                                 <i class="bx bx-chevron-right"></i>
-                                <A href="club-aa.html">Club d'Entrepreneuriat Agriculture et Agroforesterie
+                                <A href="/clubs/a-a">Club d'Entrepreneuriat Agriculture et Agroforesterie
                                     (A/A)</A>
                                 </li>
                                 <li>
                                 <i class="bx bx-chevron-right"></i>
-                                <A href="club-er.html">Club d'Entrepreneuriat Energies Renouvelables (ER)</A>
+                                <A href="/clubs/er">Club d'Entrepreneuriat Energies Renouvelables (ER)</A>
                                 </li>
                                 <li>
                                 <i class="bx bx-chevron-right"></i>
-                                <A href="club-jpr.html">Club d'Entrepreneuriat Journal-Poésie-Roman (JPR)</A>
+                                <A href="/clubs/jpr">Club d'Entrepreneuriat Journal-Poésie-Roman (JPR)</A>
                                 </li>
                                 <li>
                                 <i class="bx bx-chevron-right"></i>
-                                <A href="club-n.html">Club d'Entrepreneuriat Numérique (N)</A>
+                                <A href="/clubs/num">Club d'Entrepreneuriat Numérique (N)</A>
                                 </li>
                                 <li>
                                 <i class="bx bx-chevron-right"></i>
-                                <A href="club-el.html">Club d'Entrepreneuriat et leadership (EL)</A>
+                                <A href="/clubs/e-cl">Club d'Entrepreneuriat Environnement et Changements Climatiques (E/CL)</A>
                                 </li>
                             </ul>
                     </aside>

@@ -1,3 +1,5 @@
+import styles from './vide.module.css'
+
 export default function Vide(){
-    return <div style={{height : '82px'}}></div>
+    return <div class={styles.vide} ></div>
 }

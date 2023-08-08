@@ -27,3 +27,12 @@
     aspect-ratio: 1;
     background-size: cover;
 }
+
+@media (max-width : 758px) {
+    .grid_template_3 {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+}

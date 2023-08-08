@@ -18,31 +18,40 @@ export default function Vision(){
                                 <span class="h2">Une même vision</span>
                             </div>
                             <span class="p">
-                                Réduire le taux de chômage, favoriser l’auto-emploi et 
-                                contribuer à l’épanouissement du citoyen et au développement 
-                                positif des tissus économiques et sociaux du Cameroun.
+                            Réduire le taux de chômage et de sous-emploi au Cameroun, développer chez le jeune
+                            la culture de l’auto-emploi dès la base, contribuer à l’épanouissement du citoyen et au
+                            développement du Cameroun.
                             </span>
                         </div>
                     </div>
                     <div class={styles.right}>
                         <div>
                             <div>
-                                <p class="p">Concevoir et développer des projets innovants auprès de la 
-                                    jeunesse en quête d’emploi afin de promouvoir auprès d’eux l’esprit 
-                                    d’entrepreneuriat et de leadership. <span style={{ color : '#7b24ea', "font-weight" : '700'}}> Telle est notre mission</span>.
+                                <p class="p">
+                                <span style={{ color : '#7b24ea', "font-weight" : '700'}}> Une association opportune :</span>
+                                Depuis 2012, l’AJEC mène ses activités sur l’étendue du
+                                territoire camerounais. Elle est née en raison de :
                                 </p>
                             </div>
-                            <div>
-                                <p class="p">L'Association voit le jour suite à un constat : le faible 
-                                taux d'insertion socioprofessionnelle des jeunes due au déphasage entre 
-                                l'enseignement reçu et les compétences réquises dans le monde professionnel.
-                                </p>
+                            <div class="" style={{"margin-bottom" : '24px'}}>
+                                <li class="p">
+                                Du faible taux d’insertion professionnel des jeunes diplômés due à
+                                l’inadaptation des contenus de formation aux attentes réelles des entreprises ; 
+                                </li>
+                                <li class="p">
+                                Du fort taux de sous-emploi (pourcentage à cette date) et de chômage
+                                (pourcentage)
+                                </li>
+                                <li class="p">
+                                De la vacuité des curricula au niveau de l’enseignement obligatoire (primaire et
+                                secondaire) sur l’entrepreneuriat et le leadership.
+                                </li>
                             </div>
-                            <div>
+                            {/* <div>
                                 <p class="p">Depuis 2012, l'AJEC oeuvre dans le triangle national pour 
                                 impacter positivement la courbe d'évolution du Cameroun.
                                 </p>
-                            </div>
+                            </div> */}
                             <Button>Changeons les choses ensemble.</Button>
                         </div>
                     </div>

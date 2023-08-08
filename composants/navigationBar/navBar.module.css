@@ -31,6 +31,22 @@
     object-fit: contain;
 }
 
+.burger{
+    width: 48px;
+    aspect-ratio: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger img {
+    width : 90%
+}
+
+.navigationphone {
+    display: none;
+}
+
 .navigation {
     display: flex;
     align-items: center;
@@ -111,4 +127,113 @@
 .blockClub > div:nth-child(3) {
     font-size: 14px;
     font-weight: 300;
+}
+
+@media (max-width : 758px) {
+    .navBar {
+        display: flex;
+        align-items: center;
+        height: 58px;
+        background-color: var(--color-white);
+        padding: 0 7px;
+    }
+    
+    .logo img {
+        height: 38px;
+    }
+
+    .navigationphone {
+        display: block;
+        position: fixed;
+        background-color : white;
+        width : 102%;
+        left: -7px;
+        top: 58px;
+        box-shadow: 0 10px 20px -15px rgba(0, 0, 0, 0.185);
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+    }
+
+    .navigationphone[data-isOpen = 'false']{
+        height: 0;
+    }
+    .navigationphone[data-isOpen = 'true']{
+        height: 200px;
+    }
+    
+
+    .navigationphone ul {
+        padding: 0;
+        list-style: none;
+        position: relative;
+    }
+
+    .navigationphone li {
+        padding: 9px 20px;
+        text-align: right;
+        position: relative;
+    }
+
+    .navigationphone li a {
+        color: black;
+        text-decoration: none;
+
+    }
+    .navigationphone li + li::before {
+        content: '';
+        width: 100%;
+        background-image: linear-gradient(to right, transparent 30%, rgb(235, 235, 235));
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .navigationphone .member {
+        position: absolute;
+        width: 110px;
+        aspect-ratio: 1;
+        background-color: var(--color-primary) ;
+        border-radius: 1rem;
+        top: 25px;
+        
+        left: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease-in-out .2s;
+    }
+
+    .navigationphone[data-isOpen = 'false'] .member{
+        opacity: 0;
+        transform: translateX(16px);
+    }
+    .navigationphone[data-isOpen = 'false'] .member > .login > div:first-child {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+
+    .navigationphone .member > .login > div {
+        text-align: center;
+        transition: all .5s ease-in-out .2s;
+    } 
+
+    .navigationphone .member * {
+        color: white;
+        text-decoration: none;
+        line-height: 1.1;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger img {
+        width : 50%
+    }
 }
