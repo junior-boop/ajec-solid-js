@@ -1,0 +1,39 @@
+.aproposheader {
+    width: 100%;
+    aspect-ratio: 19/9;
+    position: relative;
+}
+.aproposheader .headerimage {
+    width: 100%;
+    aspect-ratio: 16/9;
+    transform: translateY(5em);
+    position: absolute;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.aproposheader .headerimage img {
+    width: 100%;
+}
+
+.membercontentApropos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+@media (max-width : 756px){
+    .membercontentApropos {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    .aproposheader .headerimage {
+        width: 100%;
+        aspect-ratio: 16/9;
+        transform: translateY(5em);
+        position: absolute;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+}
