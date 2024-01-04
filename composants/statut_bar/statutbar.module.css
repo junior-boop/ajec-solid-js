@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 2.5vmin;
+}
+
+.navbar button {
+    display: flex;
+    padding: 1vmin;
+    align-items: center;
+    gap: 2vmin;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding-right: 2vmin;
+    cursor: pointer;
+}
+
+.navbar button span {
+    font-size: calc(7px + 1vmin);
+}

@@ -1,6 +1,5 @@
 .container {
     margin: 0 auto;
-    height: 100%;
 }
 
 @media (max-width : 512px){
@@ -10,21 +9,17 @@
 }
 @media (max-width : 756px){
     .container {
-        width: 90%;
+        width: 100vw;
     }
 }
-@media (max-width : 1082px){
+
+@media (min-width : 1080px){
     .container {
-        width: 80%;
+        width: 70vmax;
     }
 }
-@media (max-width : 1400px){
+@media (min-width : 1280px){
     .container {
         width: 1080px;
-    }
-}
-@media (min-width : 1450px){
-    .container {
-        width: 1400px;
     }
 }

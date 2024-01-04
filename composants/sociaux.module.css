@@ -1,0 +1,90 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap : 21px;
+
+    margin-bottom: 7rem;
+}
+.grid_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap : 21px;
+
+    margin-bottom: 7rem;
+}
+
+@media (max-width: 756px ) {
+    .grid {
+        display: block;
+    }
+    .grid[data-data = 'social' ] {
+        display: none;
+    }
+    .grid_3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap : 5px;
+        width : 98vw;
+        margin:0 auto 7rem;
+    }
+}
+
+.sociauxElement {
+    grid-column: span 2;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f8f8f8;
+    position: relative;
+    cursor: pointer;
+    color: black;
+}
+
+.partenaire {
+    grid-column: span 4;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f8f8f8;
+    position: relative;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.mobil {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 16px;
+    gap: 32px;
+}
+@media (min-width : 1080px) {
+    .mobil {
+        display: none;
+    }
+}
+
+.videoAffiche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.videoAffiche button{
+    width:  100px !important;
+    aspect-ratio: 1;
+}

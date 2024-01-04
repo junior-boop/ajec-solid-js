@@ -1,0 +1,25 @@
+.text{
+  margin-bottom: 5rem;
+}
+.text *{
+  text-align: center;
+}
+.text > div{
+  width: 70%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.text > div:last-child{
+  font-size: 32px;
+}
+
+.videoAffiche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.videoAffiche button{
+  width:  100px !important;
+  aspect-ratio: 1;
+}

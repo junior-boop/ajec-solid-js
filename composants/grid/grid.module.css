@@ -1,0 +1,30 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap : 21px;
+
+    margin-bottom: 7rem;
+}
+.grid_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap : 21px;
+
+    margin-bottom: 7rem;
+}
+
+@media (max-width: 756px ) {
+    .grid[data-data = 'social' ] {
+        display: none;
+    }
+    .grid {
+        display: block;
+    }
+    .grid_3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap : 12px;
+        width : 92vw;
+        margin:0 auto 7rem;
+    }
+}

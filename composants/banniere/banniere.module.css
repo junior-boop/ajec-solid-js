@@ -1,0 +1,34 @@
+.banniere {
+    width: 100%;
+    height: calc(100vh - 8vmin);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banniere .bande {
+    display: flex;
+    height: 7vmin;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.527);
+    backdrop-filter: blur(10px) ;
+}
+
+.textTitre {
+    padding: 5vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textTitre ~ .bas {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 12vmin;
+}
+.titre {
+    margin: 0;
+    line-height: 1;
+    font-size: calc(56px + 3vmin);
+    font-weight: 700;
+}

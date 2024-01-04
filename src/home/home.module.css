@@ -1,0 +1,48 @@
+.home {
+    display: block;
+    width: 100%;
+}
+
+
+
+.titleBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 0 16px;
+}
+.titleBar > div:first-child {
+    width: 50%;
+}
+.titleBar > div:last-child a {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    background-color: #252B5B;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.videoAffiche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.videoAffiche button{
+    width:  100px !important;
+    aspect-ratio: 1;
+}
+
+@media (min-width : 720px) {
+    .titleBar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+}

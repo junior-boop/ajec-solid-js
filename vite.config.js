@@ -8,7 +8,7 @@ export default defineConfig({
     markdown : (body) => `${body}`
   })],
   server: {
-    port: 3000,
+    port: 3500,
   },
   build: {
     target: 'esnext',

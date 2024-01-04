@@ -1,0 +1,228 @@
+.gridElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f8f8f8;
+    position: relative;
+    overflow: hidden;
+}
+.gridElement button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width : 2.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    color: #e52087;
+    cursor: pointer;
+    background-color: #FDEDF5;
+    transition: all .3s ease-in-out;
+}
+
+.gridElement > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.gridElement > div:last-child, 
+.gridElement > div:first-child {
+    position: relative;
+    z-index: 4;
+}
+
+.gridElement > .back {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.158);
+    left: 0;
+    top: 0;
+}
+
+.productElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f8f8f8;
+    position: relative;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+
+.productElement > div:first-child {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+}
+
+.productElement > div:first-child > span {
+    display : block
+}
+.productElement > div:first-child > span:first-child {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+}
+.productElement > div:first-child > span:last-child {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+}
+
+.productElement > div:nth-child(2) {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.productElement > div:nth-child(2) > span {
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    right: -15px;
+    color: #02D1FF;
+    text-decoration: underline;
+}
+.productElement > div:nth-child(2) > sup {
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    right: -15px;
+    top: -5px;
+}
+.productElement > div:nth-child(3) {
+    position: absolute;
+    height: 450px;
+    top: 40%;
+}
+.productElement > div:nth-child(3) > div{
+    height: 450px;
+}
+
+@media (max-width : 756px) {
+    .productElement {
+        padding: 1.5rem;
+        border-radius: .5rem;
+        margin-bottom: 0rem;
+        cursor: pointer;
+    }
+    
+    .gridElement {
+        padding: 1.5rem;
+        border-radius: 2rem;
+        margin: 0 auto 1.5rem;
+        width: 90%;
+        height: 450px !important;
+    }
+    
+    .productElement > div:first-child {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 90px;
+    }
+    
+    .productElement > div:first-child > span {
+        display : block
+    }
+    .productElement > div:first-child > span:first-child {
+        font-size: 24px;
+    }
+    .productElement > div:first-child > span:last-child {
+        font-size: 16px;
+    }
+    
+    .productElement > div:nth-child(2) {
+        width: 100%;
+        height: 40px;
+    }
+    
+    .productElement > div:nth-child(2) > span {
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        right: -15px;
+        color: #02D1FF;
+        text-decoration: underline;
+    }
+    .productElement > div:nth-child(2) > sup {
+        font-size: 12px;
+        font-weight: 700;
+        position: relative;
+        right: -15px;
+        top: -5px;
+    }
+    .productElement > div:nth-child(3) {
+        position: absolute;
+        height: 450px;
+        top: 40%;
+    }
+    .productElement > div:nth-child(3) > div{
+        height: 312px;
+    }
+}
+
+.sociauxElement {
+    grid-column: span 2;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f8f8f8;
+    position: relative;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    color: black;
+}
+.partenaire {
+    grid-column: span 4;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f8f8f8;
+    position: relative;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.partenaire > div:first-child {
+    width: 60%;
+    font-weight: 600;
+}
